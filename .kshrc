@@ -35,6 +35,7 @@ alias weather='curl http://wttr.in/New_York'
 command -v neomutt > /dev/null && alias mutt='neomutt'
 alias svim="doas vim"
 alias svi="doas vi"
+alias vim="vi"
 
 # nice colored prompt that also sets xterm title
 _XTERM_TITLE='\[\033]0;\u@\h:\w\007\]'
@@ -45,3 +46,5 @@ case "$(id -u)" in
   *) _PS1_COLOR='\[\033[32m\]'   ;;
 esac
 PS1='$_XTERM_TITLE\A $_PS1_COLOR\u@\h$_PS1_CLEAR:$_PS1_BLUE\w$_PS1_COLOR\$$_PS1_CLEAR '
+
+alias ctor='chrome --unveil --incognito --proxy-server="socks://127.0.0.1:9050"'

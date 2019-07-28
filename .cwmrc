@@ -34,8 +34,6 @@ bind-key M-Tab window-cycle
 # mod/alt + shift + tab = same thing in reverse
 bind-key 4S-Tab window-rcycle
 bind-key MS-Tab window-rcycle
-# mod + w = kill window
-bind-key 4-w window-delete
 # set a window's label
 bind-key 4-n window-menu-label
 
@@ -134,11 +132,11 @@ bind-mouse 4S-2 window-hide
 # these commands will appear in the command menu
 command xterm  xterm
 command chrome "chrome --enable-unveil"
+command firefox firefox
+command pcmanfm pcmanfm
+command libreoffice libreoffice
 command xclock xclock
 command xcalc  xcalc
 
 # ignore these windows when tiling/cycling
 ignore xclock
-
-bind-key 4-b		"xbacklight -dec 10 -time 0"
-bind-key 4S-b		"xbacklight -inc 10 -time 0"
