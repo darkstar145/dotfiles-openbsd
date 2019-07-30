@@ -1,0 +1,3 @@
+doas ifconfig iwm0 nwid eduroam wpa wpaakms 802.1x up
+doas wpa_supplicant -B -i iwm0 -c /etc/wpa_supplicant.conf
+doas dhclient iwm0
