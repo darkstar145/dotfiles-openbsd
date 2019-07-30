@@ -32,5 +32,8 @@ setxkbmap -option ctrl:nocaps
 # start redshift
 redshift -l 43:-92 &
 
-# start cwm!
-exec cwm
+# start slstatus
+slstatus &
+
+# start dwm!
+exec dwm

@@ -35,7 +35,6 @@ alias weather='curl http://wttr.in/New_York'
 command -v neomutt > /dev/null && alias mutt='neomutt'
 alias svim="doas vim"
 alias svi="doas vi"
-alias vim="vi"
 
 # nice colored prompt that also sets xterm title
 _XTERM_TITLE='\[\033]0;\u@\h:\w\007\]'
